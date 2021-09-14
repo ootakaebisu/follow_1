@@ -1,0 +1,13 @@
+<h1>ユーザー一覧</h1>
+
+<% @users.each do |user| %>
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <%= link_to user.name, user_path(user.id) %>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<% end %>
